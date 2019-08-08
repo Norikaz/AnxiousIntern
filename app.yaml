@@ -3,8 +3,12 @@ api_version: 1
 threadsafe: true
 
 handlers:
+- url: /js
+  static_dir: js
+
 - url: /.*
   script: main.app
+
 - url: /admin/.*
   script: google.appengine.ext.admin.application
   login: admin

@@ -1,6 +1,7 @@
 import webapp2
 import jinja2
 import os
+
 #jinja env
 jinja_env = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -16,9 +17,9 @@ class Login(webapp2.RequestHandler):
 
 
 class Userpage(webapp2.RequestHandler):
-    def post(self):
+    def get(self):
         user_page_template = jinja_env.get_template('templates/userpage.html')
-        self.respose.write(user_page_template.render())
+        self.response.write(user_page_template.render())
 
 class sign_up(webapp2.RequestHandler):
     def get(self):
@@ -27,13 +28,15 @@ class sign_up(webapp2.RequestHandler):
     def post(self):
         user_page_template = jinja_env.get_template('templates/userpage.html')
         self.response.write(user_page_template.render())
-class token_check(webapp2.RequestHandler):
-    def post(self):
+class Setup(webapp2.RequestHandler):
+    def get(self):
+        setup_template = jinja_env.get_template('templates/setup.html')
+        self.response.write(setup_template.render())
         pass
 #routes
 app = webapp2.WSGIApplication([
     ('/',Login),
     ('/userspage',Userpage),
     ('/sign_up',sign_up),
-    ('/tokensignin',token_check)
+    ('/setupinfo',Setup)
 ],debug=True)
