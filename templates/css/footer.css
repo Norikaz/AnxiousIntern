@@ -12,6 +12,9 @@ p2 {
   padding: 50px;
   margin: 150px;
 } */
+body{
+  margin:auto;
+}
 .sign_outbtn, a:visited{
 background-color: #3295e6;
 color: white;
@@ -42,9 +45,8 @@ right:10.5%;
   background-color: #1b7ecf;
 }
 .footer {
-  width: 100%;
   position: relative;
-  height: auto;
+  height: 100%;
   background-color: #070617;
   padding-bottom: 4.5%;
 
