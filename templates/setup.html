@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <head>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<script src="/js/system.js"></script>
-<meta name="google-signin-client_id" content="573226754509-rip6mgoh44tj4iluffo6p48a0vba1ah5.apps.googleusercontent.com">
-
-
+  <link rel="stylesheet" href="/stylesheets/setup.css">
 </head>
-<body>
-  <h1>Input Info</h1>
-  <form method="post" action="/userspage">
-    Full Name:
-    <br>
-    <input type="text"placeholder="Full Name" >
-    <br>
-    Resume Link:
-    <br>
-    <input type="text"placeholder="Resume" >
-    <br>
-    Git hub:
-    <br>
-    <input type="text"placeholder="Github" >
-    <br>
-    Coding Languages:
-    <br>
-    <input type="text"placeholder="Languages" >
-    <br>
-<form>
+<div class="container">
+
+    <form id="signup" method="post" action="/">
+
+        <div class="header">
+
+            <h3>Sign Up</h3>
+
+            <p>Please fill out this form to create an account!</p>
+
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="inputs">
+
+            <input type="text"placeholder="Full Name" name="name">
+
+            <input type="text"placeholder="Resume" name="resume">
+
+            <input type="text"placeholder="Cover Letter" name="cover_letter">
+
+            <input type="text"placeholder="Github" name="Git">
+
+            <input type="text"placeholder="Languages" name="lang" maxlength="20">
+
+            <input type="text"placeholder="Highschool Transcripts" name="hs_trans">
+
+            <input type="text"placeholder="College Unoffical Transcripts" name="cu_trans">
+
+            <input type="text"placeholder="College Offical Transcripts" name="co_trans">
 
 
+            <input id="submit" type="submit">
 
+        </div>
 
+    </form>
 
-</body>
+</div>
