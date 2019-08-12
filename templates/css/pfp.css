@@ -143,9 +143,8 @@ hr {
   border-width: 5px;
 }
 .title{
-  background-color:#3295e6;
+   background-color:#3295e6;
   padding: .8%;
-  margin-bottom: 30px;
   font-family: inherit;
   -webkit-font-smoothing: subpixel-antialiased;
   font-size:x-large;
