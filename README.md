@@ -17,7 +17,7 @@ Front-End
 Riyahauna Headley:
 Front-End
 
-## Build With
+## Built With
 * Google AppEngine- Platform for developing and hosting web apps in google
 * MVC- Web frameworked used
 * Google datastore- Database used
